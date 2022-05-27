@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Toggle</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+
+</head>
+<body>
+    
+    <!-- by default class=btn0 to give the background green color-->
+    <div id="box" class="green">
+    
+        <div id="menuBox">
+            <!-- menu burger -->
+            <div id="burger">
+                <img src="Color Toggle/burger.svg" alt="burger">
+            </div>
+
+            <!-- drop down menu -->
+            <div id="menu" class="fadeout">
+                <ul>
+                    <li id="btn0" class="lichtguldenroede" data-key="49">
+                        <input type="radio" name="button" checked>
+                        <label><span class="checkmark"></span>&nbsp&nbsp lichtguldenroede</label>
+                    </li>
+                    <li id="btn1" class="zeegroen" data-key="50">
+                        <input type="radio" name="button">
+                        <label><span class="checkmark"></span>&nbsp&nbsp zeegroen</label>
+                    </li>
+                    <li id="btn2" class="middenpaars" data-key="51">
+                        <input type="radio" name="button">
+                        <label><span class="checkmark"></span>&nbsp&nbsp middenpaars</label>
+                    </li>
+                    <li id="btn3" class="oranjerood" data-key="52">
+                        <input type="radio" name="button">
+                        <label><span class="checkmark"></span>&nbsp&nbsp oranjerood</label>
+                    </li>
+                    <li id="btn4" class="warmroze" data-key="53">
+                        <input type="radio" name="button">
+                        <label><span class="checkmark"></span>&nbsp&nbsp warmroze</label>
+                    </li>
+                    <li id="btn5" class="korenbloemblauw" data-key="54">
+                        <input type="radio" name="button">
+                        <label><span class="checkmark"></span>&nbsp&nbsp korenbloemblauw</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <h1 id="text">lichtguldenroede</h1>
+    
+</body>
+</html>
