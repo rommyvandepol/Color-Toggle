@@ -56,7 +56,6 @@ ul {
   list-style: none;
 }
 
-/* burger image */
 #burger {
   width: 90px;
   color: white;
@@ -65,7 +64,6 @@ ul {
   margin-top: 5vh;
 }
 
-/* button list */
 li {
   padding: 20px 40px;
   margin-left: -40px;
@@ -112,20 +110,17 @@ li {
   margin-bottom: -32px;
 }
 
-/* hide default radio button */
 input {
   opacity: 0;
   height: 0;
   width: 0;
 }
 
-/* label or radio button */
 label {
   position: relative;
   cursor: pointer;
 }
 
-/* create custom radio button */
 .checkmark {
   position: absolute;
   margin: 8px 0px 0px -20px;
@@ -135,7 +130,6 @@ label {
   border-radius: 50%;
 }
 
-/* checked radio button */
 .checked span {
   background-color: white;
 }

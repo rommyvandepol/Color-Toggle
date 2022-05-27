@@ -19,17 +19,15 @@ const backColor = document.getElementById('box').classList
 const selectBtn = document.querySelectorAll('li')
 const selectTxt = document.getElementById('text')
 
-// FUNCTION: change color
 const changeColor = (enterBtn) => {
-    // change background color
+    
     const color = enterBtn.classList[0]
     backColor.replace(backColor.item(0), color)
 
-    // change background text
+    
     const getData = enterBtn.classList[0]
     selectTxt.innerText = getData
 
-    // check current radiobutton
     Array.from(selectBtn).forEach(enterBtn => {
         enterBtn.firstElementChild.removeAttribute('checked')
         enterBtn.lastElementChild.classList.remove('checked')
@@ -37,21 +35,18 @@ const changeColor = (enterBtn) => {
     enterBtn.firstElementChild.setAttribute('checked','checked')
     enterBtn.lastElementChild.classList.toggle('checked')
     
-    // close menu after click
     selectMenu.classList.replace('fadein', 'fadeout')
     setTimeout(() => {
         selectMenu.style.border = 'none'
     }, 400)
 }
 
-// EVENT: click button --> change color 
 selectBtn.forEach(button => {
     button.addEventListener('click', () => {
         changeColor(button)
     })
 })
 
-// EVENT: keypress --> change color
 window.addEventListener('keypress', (event) => {
     let keyCode = event.keyCode
     selectBtn.forEach(button => {
